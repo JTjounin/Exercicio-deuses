@@ -1,0 +1,52 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Deuses</title>
+</head>
+
+<body>
+
+    <button onclick="Click()">Add God</button>
+
+    <ul id="nomes"></ul>
+
+    <script>
+
+        //1-Exercício
+
+        function somar(Num1, Num2) {
+            let conta = Num1 + Num2
+            console.log(conta);
+        }
+        somar('Hellow ', 'Word !');
+        somar('2+2 é ', 5)
+
+
+        //2-Exercício
+
+        let deuses = ['Aegir', 'Aud', 'Balder'];
+        console.log(deuses, deuses.length)
+        function Click() {
+            deuses.push('Loki');
+            console.log(deuses, deuses.length);
+        }
+
+
+        //3-Exercício
+
+        let Gods = ['Aegir', 'Aud', 'Balder', 'Bragi', 'Búri', 'Dag', 'Dellingr'];
+
+        for (let deus of Gods) {
+            let deusNome = "<li>" + deus + "</li>";
+            document.getElementById("nomes").innerHTML += deusNome;
+        }
+
+    </script>
+
+
+</body>
+
+</html>
